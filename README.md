@@ -4,6 +4,14 @@
 
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen) ![Static Badge](https://img.shields.io/badge/Version-1.0.2-black)
 
+## 🧑‍🤝‍🧑 Informações dos Contribuintes
+
+| Nome | Matricula | Turma |
+| :------------: | :------------: | :------------: |
+| André Rogério Vieira Pavanela Altobelli Antunes | 554764 | 1TDSPH |
+| Leticia Cristina dos Santos Passos | 555241 | 1TDSPH |
+| Pedro Herique Vasco Antonieti | 556253 | 1TDSPH |
+
 ## 🚩 Características
 
 Desenvolvimento utilizando linguagem de marcação HTML e linguagem de estilização CSS pra o desenvolvimento da interface do usuário (UI) utilizando paletas de cores acessíveis, tags semânticas do HTML, como por exemplo: `<main>`, `<section>`, `<nav>`. Servidor em Vite.JS, utilizando o framework React + TypeScript e componentes estilizados com Tailwind CSS.
