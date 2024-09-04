@@ -35,6 +35,7 @@ Para iniciar o projeto faz se necessário seguir algumas etapas abaixo:
 ### 📝 Pré-requisitos
 * ViteJS: O Vite.Js requer Node.Js versão 18+ ou 20+. Acesse <a href="https://nodejs.org/pt/download/package-manager">Node.Js</a> e baixe a versão `Latest`.
 <br>
+
 * NPM: O Gerenciador de Pacotes do Node (NPM) requer versão 7+.
     ```sh
     npm install npm@latest -g
