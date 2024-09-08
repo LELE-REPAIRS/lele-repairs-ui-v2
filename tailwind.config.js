@@ -8,7 +8,16 @@ export default {
   theme: {
     extend: {
       dropShadow: {
-        'row': '0px 4px 0px var(--tw-color-6)',
+        'row': '0px 4px 0px var(--tw-color-6)'
+      },
+      backgroundImage: {
+        'icon-email': "url('/icon-email.svg')",
+        'icon-password': "url('/icon-password.svg')",
+        'icon-facebook': "url('/icon-facebook.svg')",
+        'icon-instagram': "url('/icon-instagram.svg')"
+      },
+      boxShadow: {
+        'button': '0px 4px 0px 0px var(--tw-color-6)'
       },
       colors: {
         color_1: '#FBFDFF',
@@ -46,11 +55,10 @@ export default {
         '*': {
           'margin': '0',
           'padding': '0',
-          'border': '0',
           'text-decoration': 'none',
           'font-family': '"Inter", sans-serif',
           'font-style': 'normal',
-        },
+        }
       });
     },
   ],
