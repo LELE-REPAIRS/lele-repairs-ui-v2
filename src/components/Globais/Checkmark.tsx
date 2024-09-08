@@ -1,22 +1,17 @@
-type InputProps = {
-    classname?: string,
-    type: string,
+type CheckmarkProps = {
     name: string,
     id: string,
-    placeholder?: string, 
-    minlength?: number,
-    maxlength?: number,
-    required?: boolean
+    required?: boolean,
+    value: string | "Valor não definido"
 }
 
-function Checkmark({classname, type, name, id, placeholder, minlength, maxlength, required}: InputProps) {
+function Checkmark({name, id, required, value}: CheckmarkProps) {
 
     return (
-        <div className="relative">
-            <label className="block relative prcursor-pointer text-color_8 select-none">Lembrar senha
-                <input className={classname} type={type} name={name} id={id} placeholder={placeholder} minLength={minlength} maxLength={maxlength} required={required}></input>
-            </label>
-        </div>
+        <label className="checkbox">{value}
+            <input type="checkbox" id={id} name={name} required={required}/>
+            <span className="checkmark"></span>
+        </label>
     );
 }
 
