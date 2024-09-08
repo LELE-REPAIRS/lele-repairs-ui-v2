@@ -14,7 +14,10 @@ export default {
         'icon-email': "url('/icon-email.svg')",
         'icon-password': "url('/icon-password.svg')",
         'icon-facebook': "url('/icon-facebook.svg')",
-        'icon-instagram': "url('/icon-instagram.svg')"
+        'icon-instagram': "url('/icon-instagram.svg')",
+        'icon-document': "url('/icon-document.svg')",
+        'icon-card': "url('/icon-card.svg')",
+
       },
       boxShadow: {
         'button': '0px 4px 0px 0px var(--tw-color-6)'
