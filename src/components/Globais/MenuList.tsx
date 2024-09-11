@@ -7,8 +7,6 @@ type MenuListProps = {
     value: string
 }
 
-
-
 function MenuList({icon, select, to, value}: MenuListProps) {
     
     const no_selected:string = 'p-4 rounded-lg flex-col justify-start items-start gap-2.5 flex';
@@ -21,7 +19,7 @@ function MenuList({icon, select, to, value}: MenuListProps) {
         font = 'font-bold';
     } else {
         class_result = no_selected
-        font = 'normal';
+        font = 'font-normal';
     }
 
     return (
