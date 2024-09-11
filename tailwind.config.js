@@ -17,6 +17,12 @@ export default {
         'icon-instagram': "url('/icon-instagram.svg')",
         'icon-document': "url('/icon-document.svg')",
         'icon-card': "url('/icon-card.svg')",
+        'icon-robot': "url('/icon-robot.svg')",
+        'icon-car': "url('/icon-car.svg')",
+        'icon-conhecimento': "url('/icon-conhecimento.svg')",
+        'icon-info': "url('/icon-info.svg')",
+        'icon-logout': "url('/icon-logout.svg')",
+        'avatar': "url('/avatar.png')",
 
       },
       boxShadow: {
