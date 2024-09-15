@@ -1,4 +1,4 @@
-type ChatProps = {
+type ChatActiveProps = {
     name: string,
     categoria: string,
     last_message: string,
@@ -6,8 +6,7 @@ type ChatProps = {
     avatar: string
 }
 
-
-function Chat({name, categoria, last_message, avatar, last_message_date}: ChatProps){
+function ChatActive({name, categoria, last_message, avatar, last_message_date}: ChatActiveProps){
     return (
         <div className="h-[50px] justify-start items-start gap-2.5 inline-flex">
             <img className="w-[50px] h-[50px] rounded-full" src={avatar}/>
@@ -25,4 +24,4 @@ function Chat({name, categoria, last_message, avatar, last_message_date}: ChatPr
     );
 }
 
-export default Chat;
+export default ChatActive;
