@@ -10,7 +10,7 @@ function Login(){
     
     return (
       <Header>
-        <main className="flex flex-row justify-center items-center drop-shadow-row">
+        <main className="flex flex-row justify-center items-center">
           <section className="w-[328px] h-full rounded-[30px] border-[2px] border-color_6 bg-color_2">
             <div className="w-full h-full inline-flex flex-col items-center p-4 gap-4">
               <Logo/>
