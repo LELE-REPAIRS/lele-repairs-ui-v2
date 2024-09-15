@@ -17,7 +17,7 @@ function Chat({name, categoria, last_message, avatar, last_message_date}: ChatPr
                     <p className="self-stretch h-4 text-color_9 text-[15px] font-normal">{categoria}</p>
                 </div>
                 <div className="h-3.5 justify-end items-center inline-flex">
-                    <p className="w-60 h-3.5 text-black text-[10px] font-extralight leading-[14px]">{last_message}</p>
+                    <p className="w-60 h-3.5 text-black text-[10px] font-extralight leading-[14px] whitespace-nowrap overflow-hidden text-ellipsis">{last_message}</p>
                 </div>
             </div>
             <p className="text-color_11 text-[10px] font-normal">{last_message_date}</p>
