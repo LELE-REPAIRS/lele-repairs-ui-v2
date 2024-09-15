@@ -16,7 +16,7 @@ function Assistentes(){
       <Header>
         <nav className="h-[900px] px-6 pt-6 pb-8 bg-color_2 rounded-[30px] border-2 border-color_6 flex-col justify-between items-start inline-flex">
           <div className="self-stretch h-[402px] flex-col justify-start items-start gap-[52px] flex">
-            <Avatar src={'/avatar.png'} name={'Pedro Henrique Vasco Antonieti'} email={'rm556253@fiap.com.br'}/>
+            <Avatar src={'/user-logged.png'} name={'Pedro Henrique Vasco Antonieti'} email={'rm556253@fiap.com.br'}/>
             <div className="h-[300px] flex-col justify-start items-start gap-6 inline-flex">
               <MenuList icon={'bg-icon-robot'} select={true} to={'/assistentes'} value="Assistentes"/>
               <MenuList icon={'bg-icon-car'} select={false} to={'/meus-carros'} value="Meus Carros"/>
@@ -25,7 +25,7 @@ function Assistentes(){
             </div>
           </div>
           <div className="self-stretch h-14 flex-col justify-start items-start gap-2 flex">
-            <MenuList icon={'bg-icon-logout'} select={false} to={'/sair'} value="Sair"/>
+            <MenuList icon={'bg-icon-logout'} select={false} to={'/'} value="Sair"/>
           </div>
         </nav>
         <main className="w-[1084px] h-[900px] bg-color_2 rounded-[30px] border-2 border-color_6 flex flex-row pt-6 pb-6 px-6 gap-[25px]">
@@ -59,12 +59,13 @@ function Assistentes(){
             </div>
             <div className="w-[667px] h-[671px] flex-col justify-start items-start flex bg-white rounded-2xl border-2 border-neutral-200 shadow-bg_gray p-5 gap-5">
               <div className="w-[623px] flex flex-grow flex-col shrink basis-0 justify-start items-start gap-5 overflow-x-hidden">
-                <MessageSelf menssagem={"Olá, meu carro está com problema, me ajuda!!! 😔"} tempo={"17h atrás"} avatar={"/avatar.png"}/>
+                <MessageSelf menssagem={"Olá, meu carro está com problema, me ajuda!!! 😔"} tempo={"17h atrás"} avatar={"/user-logged.png"}/>
                 <MessageOther menssagem={"Olá Pedro, fique tranquilo, irei te dar um diagnóstico, mas para isso preciso de algumas informações."} tempo={"16h atrás"} avatar={"/bot-1.svg"}/>       
-                <MessageSelf menssagem={"Pelo que reparei ele vibra muito quando meu câmbio está no ponto morto."} tempo={"16h atrás"} avatar={"/avatar.png"}/>
+                <MessageSelf menssagem={"Pelo que reparei ele vibra muito quando meu câmbio está no ponto morto."} tempo={"16h atrás"} avatar={"/user-logged.png"}/>
                 <MessageOther menssagem={"Certo, no painel do seu carro aparece alguma luz acessa?"} tempo={"16h atrás"} avatar={"/bot-1.svg"}/> 
-                <MessageSelf menssagem={"Tem uma luz com um simbolo de óleo."} tempo={"15h atrás"} avatar={"/avatar.png"}/>
-                <MessageOther menssagem={"Ótimo. Com base nas informações passadas por você, consegui identificar que seu carro pode estar com o óleo do motor vencido. A vibração que você sente acontece por atrito entre os pistões, anéis aumentam considerávelmente."} tempo={"15h atrás"} avatar={"/bot-1.svg"}/> 
+                <MessageSelf menssagem={"Tem uma luz com um simbolo de óleo."} tempo={"15h atrás"} avatar={"/user-logged.png"}/>
+                <MessageOther menssagem={"Ótimo! Com base nas informações passadas por você, consegui identificar que seu carro pode estar com o óleo do motor vencido. A vibração que você sente acontece por atrito entre os pistões, anéis aumentam considerávelmente."} tempo={"15h atrás"} avatar={"/bot-1.svg"}/> 
+                <MessageOther menssagem={"Vou gerar a Ordem de Serviço para você se direcionar a oficina mais próxima de sua localização. Solicito que aguarde que em alguns instantes te encaminho mais informações! 😉"} tempo={"15h atrás"} avatar={"/bot-1.svg"}/> 
               </div>
               <form className="flex-col justify-center items-start gap-2.5 inline-flex">
                 <Input classname={'w-[623px] h-14 p-4 pl-5 font-normal text-sm box-border rounded-2xl border-2 border-color_7 bg-color_3 focus:outline-color_9 drop-shadow-row placeholder-color_9 text-color_9'} type="text" placeholder="Digite aqui sua mensagem..." name={"txtMenssagem"} id={'menssagem'} required={false}/>
