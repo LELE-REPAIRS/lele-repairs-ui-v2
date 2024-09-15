@@ -7,7 +7,8 @@ import Assistentes from './routes/Assistentes/index.tsx';
 import Conhecimentos from './routes/Conhecimentos/index.tsx';
 import MeusCarros from './routes/MeusCarros/index.tsx';
 import Sobre from './routes/Sobre/index.tsx';
-import Error from './routes/Error/index.tsx'
+import Error from './routes/Error/index.tsx';
+import ForgotPassword from './routes/ForgotPassword/index.tsx';
 import React from 'react';
 
 const routes = createBrowserRouter([
@@ -19,6 +20,10 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <Login />,
+      },
+      {
+        path: "forgot-password",
+        element: <ForgotPassword/>,
       },
       {
         path: "/cadastro",
