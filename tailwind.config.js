@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       dropShadow: {
-        'row': '0px 4px 0px var(--tw-color-6)'
+        'row': '0px 4px 0px var(--tw-color-6)',
+        'tag': '0px 4px 0px 0px var(--tw-shadow-gray)',
       },
       backgroundImage: {
         'icon-email': "url('/icon-email.svg')",
@@ -22,11 +23,14 @@ export default {
         'icon-conhecimento': "url('/icon-conhecimento.svg')",
         'icon-info': "url('/icon-info.svg')",
         'icon-logout': "url('/icon-logout.svg')",
+        'icon-search': "url('/icon-search.svg')",
         'avatar': "url('/avatar.png')",
 
       },
       boxShadow: {
-        'button': '0px 4px 0px 0px var(--tw-color-6)'
+        'button': '0px 4px 0px 0px var(--tw-color-6)',
+        'tag': '0px 4px 0px 0px var(--tw-shadow-gray)',
+        'bg_gray': '0px 4px 0px 0px var(--tw-border-opacity)'
       },
       colors: {
         color_1: '#FBFDFF',
@@ -41,6 +45,10 @@ export default {
         color_10: '#0088D9',
         color_11: '#0077CA',
         color_12: '#04375A',
+        bg_gray: '#E1E1E1',
+        text_gray: '#A6A6A6',
+        border_gray: '#AFAFAF',
+        shadow_gray: '#AFAFAF'
       }
     },
   },
@@ -60,6 +68,10 @@ export default {
           '--tw-color-10': theme('colors.color_10'),
           '--tw-color-11': theme('colors.color_11'),
           '--tw-color-12': theme('colors.color_12'),
+          '--tw-bg-gray': theme('colors.bg_gray'),
+          '--tw-text-gray': theme('colors.text_gray'),
+          '--tw-border-gray': theme('colors.border_gray'),
+          '--tw-shadow-gray': theme('colors.shadow_gray'),
         },
         '*': {
           'margin': '0',
