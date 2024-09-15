@@ -1,4 +1,5 @@
 import Avatar from "../../components/Globais/Avatar";
+import Input from "../../components/Globais/Input";
 import MenuList from "../../components/Globais/MenuList";
 import Header from "../../components/Header/Header";
 
@@ -22,8 +23,17 @@ function Sobre(){
             <MenuList icon={'bg-icon-logout'} select={false} to={'/sair'} value="Sair"/>
           </div>
         </nav>
-        <main className="w-[1084px] h-[900px] bg-color_2 rounded-[30px] border-2 border-color_6">
-
+        <main className="w-[1084px] h-[900px] bg-color_2 rounded-[30px] border-2 border-color_6 relative pt-6 pb-6 px-6">
+          <div className="relative flex-col justify-center items-start inline-flex gap-[25px]">
+            <div className="w-[340px] justify-center items-center inline-flex">
+              <h1 className="pt-8 px-20 text-center text-color_11 text-[32px] font-bold leading-10">Sobre</h1>
+            </div>
+            <div className="flex-col justify-center items-start gap-2.5 inline-flex">
+              <Input icon="bg-icon-search" classname={'w-[340px] h-14 p-4 pl-12 font-normal text-sm box-border rounded-2xl border-2 border-color_7 bg-color_3 focus:outline-color_9 drop-shadow-row placeholder-color_9 text-color_9'} type="text" placeholder="Buscar..." name={"txtBuscar"} id={'buscar'} required={false}/>
+            </div>
+            <div className="w-[340px] h-[670px] bg-white rounded-2xl border-2 border-neutral-200 shadow-bg_gray">
+            </div>
+          </div>
         </main>
       </Header>
     );
