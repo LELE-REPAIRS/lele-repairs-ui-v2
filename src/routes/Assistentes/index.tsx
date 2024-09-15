@@ -2,7 +2,7 @@ import Header from "../../components/Header/Header";
 import MenuList from "../../components/Globais/MenuList";
 import Avatar from "../../components/Globais/Avatar";
 import Input from "../../components/Globais/Input";
-import Chat from "../../components/Assistentes/ChatActive";
+import ChatActive from "../../components/Assistentes/ChatActive";
 import './index.css'
 import InfoBot from "../../components/Assistentes/Infobot";
 import MessageSelf from "../../components/Assistentes/MessageSelf";
@@ -37,16 +37,20 @@ function Assistentes(){
               <Input icon="bg-icon-search" classname={'w-[340px] h-14 p-4 pl-12 font-normal text-sm box-border rounded-2xl border-2 border-color_7 bg-color_3 focus:outline-color_9 drop-shadow-row placeholder-color_9 text-color_9'} type="text" placeholder="Buscar..." name={"txtBuscar"} id={'buscar'} required={false}/>
             </form>
             <div className="w-[340px] h-[670px] bg-white rounded-2xl border-2 border-neutral-200 flex p-3 flex-col gap-5 overflow-x-hidden shadow-bg_gray">
-              <Chat name={"Diogo Albuquerque"} categoria={"Óleo do Motor"} last_message={"Ótimo. Com base nas informações passadas por você, consegui identificar que seu carro pode estar com o óleo do motor vencido. A vibração que você sente acontece por atrito entre os pistões, anéis aumentam considerávelmente."} last_message_date={"15h atrás"} avatar={"/bot-1.svg"}/>
-              <Chat name={"Alexandre Castilho"} categoria={"Fluído de Freio"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-2.svg"}/>
-              <Chat name={"Rose David"} categoria={"Rodas e Pneus"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-8.svg"}/>
-              <Chat name={"Teófilo"} categoria={"Pastilhas"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-4.svg"}/>
-              <Chat name={"Ayxa Sam"} categoria={"Filtro de Ar"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-9.svg"}/>
-              <Chat name={"Samira Alencar"} categoria={"Bateria"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-7.svg"}/>
-              <Chat name={"Caio Vinícius"} categoria={"Vela de Ingnição"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-6.svg"}/>
-              <Chat name={"Victor Miranda"} categoria={"Correira Dentada"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-3.svg"}/>
-              <Chat name={"Vinícius Silva"} categoria={"Filtro do Combustível"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-5.svg"}/>
-              <Chat name={"José Almeida"} categoria={"Água do Radiador"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-10.svg"}/>
+              <ChatActive name={"Diogo Albuquerque"} categoria={"Óleo do Motor"} last_message={"Ótimo. Com base nas informações passadas por você, consegui identificar que seu carro pode estar com o óleo do motor vencido. A vibração que você sente acontece por atrito entre os pistões, anéis aumentam considerávelmente."} last_message_date={"15h atrás"} avatar={"/bot-1.svg"}/>
+              <ChatActive name={"Alexandre Castilho"} categoria={"Fluído de Freio"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-2.svg"}/>
+              <ChatActive name={"Rose David"} categoria={"Rodas e Pneus"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-8.svg"}/>
+              <ChatActive name={"Teófilo"} categoria={"Pastilhas"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-4.svg"}/>
+              <ChatActive name={"Ayxa Sam"} categoria={"Filtro de Ar"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-9.svg"}/>
+              <ChatActive name={"Samira Alencar"} categoria={"Bateria"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-7.svg"}/>
+              <ChatActive name={"Caio Vinícius"} categoria={"Vela de Ingnição"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-6.svg"}/>
+              <ChatActive name={"Victor Miranda"} categoria={"Correira Dentada"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-3.svg"}/>
+              <ChatActive name={"Vinícius Silva"} categoria={"Filtro do Combustível"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-5.svg"}/>
+              <ChatActive name={"José Almeida"} categoria={"Água do Radiador"} last_message={"Última menssagem"} last_message_date={"10h atrás"} avatar={"/bot-10.svg"}/>
+              <button className="w-[310px] h-[41.67px] justify-center items-center gap-2.5 inline-flex" type="submit">
+                <img src="./icon_plus.svg"></img>
+                <h1 className="flex-col justify-start items-start inline-flex text-[#0077ca] text-[15px] font-bold">Iniciar um novo diagnóstico</h1>
+              </button>
             </div>
           </section>
           <section className="w-[667px] h-[848px] flex-col items-start gap-[25px] inline-flex">
