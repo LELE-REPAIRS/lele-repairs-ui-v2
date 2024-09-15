@@ -24,7 +24,9 @@ export default {
         'icon-info': "url('/icon-info.svg')",
         'icon-logout': "url('/icon-logout.svg')",
         'icon-search': "url('/icon-search.svg')",
-        'avatar': "url('/avatar.png')",
+        'icon-linkedin': "url('/icon-linkedin.svg')",
+        'icon-github': "url('/icon-github.svg')",
+        'avatar': "url('/avatar.svg')",
 
       },
       boxShadow: {
