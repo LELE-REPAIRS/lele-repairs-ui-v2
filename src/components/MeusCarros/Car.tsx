@@ -1,14 +1,14 @@
-type ChatProps = {
+type CarProps = {
     apelido: string,
     marca: string,
     modelo: string,
-    ano: string,
+    ano: number,
     img_car: string,
     km: number
 }
 
 
-function Chat({apelido, marca, modelo, ano, img_car, km}: ChatProps){
+function Car({apelido, marca, modelo, ano, img_car, km}: CarProps){
     return (
         <div className="h-[50px] justify-start items-start gap-2.5 inline-flex">
             <img className="w-[50px] h-[50px] rounded-full" src={img_car}/>
@@ -25,4 +25,4 @@ function Chat({apelido, marca, modelo, ano, img_car, km}: ChatProps){
     );
 }
 
-export default Chat;
+export default Car;
